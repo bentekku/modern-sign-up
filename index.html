@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        This is not a real online service! Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Necessitatibus, commodi!
+        <p>Sign up now to get started. You know you want to.</p>
+      </h1>
+    </header>
+    <main class="container">
+      <div class="details-panel">
+        <form action="#">
+          <label for="inp-first-name">First Name</label>
+          <input
+            type="text"
+            name="name"
+            id="inp-first-name"
+            placeholder="Naruto"
+            required
+          />
+          <label for="inp-last-name">Last Name</label>
+          <input
+            type="text"
+            name="name"
+            id="inp-last-name"
+            placeholder="Uzumaki"
+            required
+          />
+          <label for="inp-email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="inp-email"
+            placeholder="naruto.uzumaki@konoha.com"
+            required
+          />
+          <label for="inp-password">Password</label>
+          <input type="password" name="password" id="inp-password" required />
+          <label for="inp-conf-password">Confirm Password</label>
+          <input
+            type="password"
+            name="conf-password"
+            id="inp-conf-password"
+            required
+          />
+          <button id="btn-sign-up">Sign Up</button>
+        </form>
+      </div>
+      <div class="divider"></div>
+      <div class="hero-img-panel">
+        <img src="./resources/svgs/reading-time.svg" alt="" srcset="" />
+      </div>
+    </main>
+    <footer>
+      <p>Created by: <a href="https://github.com/mikeykuin">Shadab Khan</a></p>
+      <p>
+        [ An Odin Project's
+        <a
+          href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form"
+          >Assignment</a
+        >
+        ]
+      </p>
+    </footer>
+  </body>
+</html>

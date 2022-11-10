@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root{
+    --accent-color: #00bfa6;
+
+    --light-grey-color: #e6e6e6;
+    --mid-grey-color: #cccccc;
+    --dark-grey-color: #3f3d56;
+    --darkest-grey-color: #2f2e41;
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+a:last-of-type{
+    font-size: 14px;
+}
+
+a:visited{
+    color: inherit;
+}
+
+header{
+    height: 10%;
+}
+
+h1{
+    font-size: 22px;
+    padding: 32px 106px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container{
+    width: 1080px;
+    height: 600px;
+
+    border-radius: 32px;
+
+    display: flex;
+    align-items: center;
+   
+    overflow: hidden;
+
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.49);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.49);
+}
+
+.details-panel{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+input {
+    height: 32px;
+    width: 260px;
+
+    font-size: 14px;
+    text-align: center;
+
+    border-radius: 6px;
+}
+
+input::selection{
+    color: var(--light-grey-color);
+    background-color: var(--darkest-grey-color);
+    font-weight: 900;
+}
+
+button{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 18px;
+
+    width: 160px;
+    height: 46px;
+
+    background-color: var(--darkest-grey-color);
+    border-radius: 10px;
+    border: none;
+
+    color: var(--light-grey-color);
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: scale 420ms;
+}
+
+button:hover{
+    scale: 1.05;
+}
+
+
+.divider{
+    height: 600px;
+
+    border: .5px solid var(--light-grey-color);
+    margin-right: .2rem;
+}
+
+.hero-img-panel{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-panel img{
+    width: 460px;
+    transform: scaleX(-1);
+}
